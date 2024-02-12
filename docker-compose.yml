@@ -3,8 +3,8 @@ services:
   web:
     image: java_springv1
     build: .
-    ports:
-      - "-:-"
+    ports: 
+      - "8084:8084"
     volumes:
        - ./volumes:/volumes
     restart: unless-stopped
